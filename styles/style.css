@@ -39,7 +39,8 @@
    infulencer star
    ================== */
    .influencer-head{
-       display: flex;
+       display: grid;
+       grid-template-columns: repeat(2, 1fr);
        align-items: center;
        margin-left: 120px;
        margin-right: 120px;
@@ -83,7 +84,7 @@
           border: 1px solid lightslategray ;
           border-left-color:white;
           border-right-color:white;
-         justify-content: space-evenly;
+          justify-content: space-evenly;
           
       }
       .logo-container{
@@ -245,6 +246,124 @@ footer{
      text-decoration: none;
      color: white;
  }
+
+ /* --------------
+   Media Query
+   ---------------  */
+
+/*============== Mobile Device==============  */
+
+
+@media screen and (max-width: 688px) {
+    header{
+        margin-left: 15px;
+    }
+    .menu-bar{
+        display: none;
+    }
+    main{
+        max-width: 100%;
+    }
+    
+    
+    .influencer-head{
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        margin-left: 15px;
+        margin-right: 15px;
+        
+    }
+    .influencer-camera img{
+        max-width: 100%;
+    }
+    .logo-container{
+        display: none;
+    }
+    .collection-container{
+        max-width: 100%;
+        margin-left: 15px;
+    }
+    .collection-tile{
+        text-align: left;
+    }
+    .collections{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .optional{
+        display: none;
+    }
+    .right{
+        margin-right: 15px;
+    }
+    footer{
+        max-width: 100%;
+    }
+    
+ }    
+
+ /*====================== Device Type: Tab==================  */
+   
+    @media only screen and (min-width:689px) and (max-width: 992px) {
+    .menu-bar{
+        display: none;
+    }
+    
+    .logo-container{
+        display: none;
+    }
+    main{
+        max-width: 100%;
+    }
+
+    .influencer-head{
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        margin-left: 15px;
+        margin-right: 15px;
+        
+    }
+    .collection-tile{
+        text-align: center;
+        margin-top: 100px;
+    }
+    .collection-container{
+        max-width: 100%;
+        margin-left: 15px;
+    }
+    .collections{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 15px;
+    }    
+        
+     .right{
+        margin-right: 15px;
+    }    
+    
+   .collection{
+        margin-right: 10px;
+        max-width: 100%;
+    }
+    .optional{
+        display: none;
+    }
+   footer{
+       max-width: 100%;
+       
+   }
+}     
+        
+    
+    
+
+  
+       
+
+
 
 
 
